@@ -8,6 +8,7 @@ import Order , {loader as orderLoader} from './features/order/Order';
 import AppLayout from './ui/AppLayout';
 import Error from './ui/Error';
 import { RouterProvider } from 'react-router-dom';
+import {action as updateAction} from './features/order/UpdateOrder';
 const router = createBrowserRouter(
   [
     {
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
       element: <Order />,
       loader: orderLoader,
       errorElement: <Error />,
+      action: updateAction,
     },
     {
       path: '/order/new',

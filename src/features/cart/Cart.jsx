@@ -5,7 +5,7 @@ import CartItem from './CartItem';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearCart } from './cartSlice';
 import EmptyCart from './EmptyCart';
-// koko
+
 function Cart() {
   const cart = useSelector((state) => state.cart.cart);
   const username = useSelector((state) => state.user.username);
